@@ -12,7 +12,9 @@ Semi-bold: 600
 Bold: 700
 
 - LINE HEIGHTS:
-Default: 1
+Default: 1 
+Small: 1.05
+Paragraoh default: 1.6 
 
 - SPACING SYSTEM (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
@@ -58,6 +60,29 @@ body {
 /*************************************/
 /* GENERAL RESUABLE COMPONENTS */
 /*************************************/
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
 
 .heading-primary {
   font-size: 5.2rem;
@@ -226,4 +251,10 @@ body {
 .delivered-text span {
   color: #cf711f;
   font-weight: 700;
+}
+
+/*************************************/
+/* HOW IT WORKS SECTION */
+/*************************************/
+.section-how {
 }
